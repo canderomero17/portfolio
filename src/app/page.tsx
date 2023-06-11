@@ -57,7 +57,7 @@ export default function Home() {
       id: 6,
       src: nextjs,
       title: "Next JS",
-      style: "shadow-white"
+      style: "shadow-gray-400"
 
   },
   {
