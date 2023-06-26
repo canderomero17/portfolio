@@ -44,14 +44,14 @@ export default function Home() {
     id: 4,
     src: typescript,
     title: "Typescript",
-    style: "shadow-sky-400"
+    style: "shadow-sky-600"
 
   },
   {
       id: 5,
       src: react,
       title: "React",
-      style: "shadow-sky-400"
+      style: "shadow-sky-500"
 
   },
   {
@@ -82,7 +82,7 @@ export default function Home() {
           {darkMode ? <p>Light mode</p> : <p>Dark mode</p>}
           <FontAwesomeIcon icon={faMoon} height={30} width={30}/>
         </div>
-        <div className="text-center pt-6 pb-4 px-10">
+        <div className="text-center pb-4 px-10 sm:pt-6">
           <h1 className={clsx('text-3xl py-2 font-medium  md:text-4xl', darkMode ? "text-teal-400" : "text-teal-600")}>Candela Romero</h1>
           <h2 className={clsx('text-xl py-2 md:text-2xl', darkMode ? "text-white" : "")}>Systems engineering student</h2>
           <p className={clsx('text-md pt-5 leading-8 max-w-xl mx-auto md:text-xl', darkMode ? "text-gray-200" : "text-gray-800")}>Im a responsible and organized woman. What I enjoy most about programming is having to learn new things constantly and to be up to date with latest technologies. I thrive on taking on new challenges.</p>
@@ -90,7 +90,7 @@ export default function Home() {
         <div className={clsx('relative w-80 mx-auto border-2 rounded-full', darkMode ? "border-teal-400" : "border-teal-600")}>
           <Image src={profilePicture} alt='profilePicture' className='overflow-clip rounded-full'/>
         </div>
-        <div className={clsx('text-center mt-4 inline-flex bg-white rounded-md justify-center gap-x-2.5')}>
+        <div className={clsx('text-center mt-4 flex justify-center gap-x-3 py-3 px-2', darkMode ? "bg-gray-900" : "bg-white")}>
           <div className='hover:scale-110 duration-500 text-blue-700'>
             <Link href='https://www.linkedin.com/in/candelabromero/'> 
               <FontAwesomeIcon icon={faLinkedinIn} width={35} className='h-[35px]' />        
