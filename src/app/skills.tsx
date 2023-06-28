@@ -4,7 +4,7 @@ import css from "../../public/techs/css.png";
 import javascript from "../../public/techs/javascript.png";
 import typescript from "../../public/techs/typescript.png";
 import react from "../../public/techs/react.png";
-import nextjs from "../../public/techs/nextjs.png";
+//import nextjs from "../../public/techs/nextjs.png";
 import github from "../../public/techs/github.png";
 import tailwind from "../../public/techs/tailwind.png";
 import Image from "next/image";
@@ -41,12 +41,12 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
       title: "React",
       style: "shadow-sky-500",
     },
-    {
-      id: 6,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-gray-400",
-    },
+//    {
+//      id: 6,
+//      src: nextjs,
+//      title: "Next JS",
+//      style: "shadow-gray-400",
+//    },
     {
       id: 7,
       src: tailwind,
