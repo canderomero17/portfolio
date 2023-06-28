@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
-import profilePicture from "../../public/profilePicture.jpg";
+import profilePicture from "../../public/profilePicture.png";
 
 export default function MyInfo({ darkMode }: { darkMode: boolean }) {
   return (
@@ -35,7 +35,7 @@ export default function MyInfo({ darkMode }: { darkMode: boolean }) {
       </div>
       <div
         className={clsx(
-          "relative w-80 mx-auto border-2 rounded-full",
+          "relative mx-auto border-2 rounded-full w-60 md:w-64",
           darkMode ? "border-teal-400" : "border-teal-600"
         )}
       >
