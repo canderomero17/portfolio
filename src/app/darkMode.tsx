@@ -18,8 +18,10 @@ export default function DarkMode({
       )}
       onClick={() => setDarkMode(!darkMode)}
     >
-      {darkMode ? <p>Light mode</p> : <p>Dark mode</p>}
-      <FontAwesomeIcon icon={faMoon} height={30} width={30} />
+      <button className={clsx("inline-flex gap-x-2 px-2 py-1 border-2 rounded-md text-sm hover:scale-105 duration-500", darkMode ? "border-teal-400" : "border-teal-600")}>
+        {darkMode ? <p>Light mode</p> : <p>Dark mode</p>}
+        <FontAwesomeIcon icon={faMoon} height={30} className="m-auto" />
+      </button>
     </div>
   );
 }
