@@ -42,6 +42,7 @@ export default function MyInfo({ darkMode }: { darkMode: boolean }) {
         <Image
           src={profilePicture}
           alt="profilePicture"
+          priority
           className="overflow-clip rounded-full"
         />
       </div>
