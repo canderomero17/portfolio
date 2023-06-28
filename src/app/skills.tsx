@@ -84,7 +84,7 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
             )}
           >
             <div className="w-20 h-20 text-center mx-auto relative">
-              <Image src={src} alt="" className="absolute mx-auto" fill />
+              <Image src={src} alt="" className="absolute mx-auto" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
             <p className={clsx("mt-4", darkMode ? "text-gray-400" : "")}>
               {title}
